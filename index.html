@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Message Checker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="box">
+    <h2>AI Message Checker 🤖</h2>
+
+    <input type="text" id="msg" placeholder="Enter your message">
+    <br>
+    <button onclick="sendData()">Check</button>
+
+    <div id="result"></div>
+
+    <h3>History</h3>
+    <ul id="history"></ul>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
